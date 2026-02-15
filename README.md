@@ -11,7 +11,7 @@ pip install -U xformers==0.0.30 --index-url https://download.pytorch.org/whl/cu1
 2. Go to [www.youtube.com](www.youtube.com) and login.
 3. Click on the `Export` on the extention to download a `www.youtube.com_cookies.txt` file, and put it in the code repo.
    ![Setup Screenshot](assets/screenshot-20260215-164406.png)
-4. Set environment variable `TED1k_ROOT` to your dataset root. The whole process will occupy 100GB.
+4. Set environment variable `TEDWB1k_ROOT` to your dataset root. The whole process will occupy 100GB.
 
 
 

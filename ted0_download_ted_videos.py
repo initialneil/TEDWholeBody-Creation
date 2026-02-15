@@ -27,11 +27,13 @@ def parse_args():
 def download_video_full(video_id, video_dir, cookies_fn):
     cmd = ' '.join([
         'yt-dlp',
-        '--cookies', f'{cookies_fn}',
-        '-f', 'bv+ba/best[ext=mp4]',
+        '--js-runtime', 'node',
+        '--remote-components', 'ejs:github',
+        '--cookies', f'"{cookies_fn}"',
+        '-f', '"bv+ba/best[ext=mp4]"',
         '--merge-output-format', 'mp4',
         '--output', f'"{video_dir}/{video_id}.%(resolution)s.%(ext)s"',
-        f'https://www.youtube.com/watch?v={video_id}'
+        f'"https://www.youtube.com/watch?v={video_id}"'
     ])
     print('--------------------------------------------------')
     print(f"{cmd}")
