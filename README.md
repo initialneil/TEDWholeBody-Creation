@@ -7,8 +7,9 @@ pip install -U xformers==0.0.30 --index-url https://download.pytorch.org/whl/cu1
 ```
 
 # Prepare
+
 1. Install [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) extension for Chrome or Edge.
-2. Go to [www.youtube.com](www.youtube.com) and login.
+2. Go to [www.youtube.com](www.youtube.com). Login. View any video.
 3. Click on the `Export` on the extention to download a `www.youtube.com_cookies.txt` file, and put it in the code repo.
    ![Setup Screenshot](assets/screenshot-20260215-164406.png)
 4. Set environment variable `TEDWB1k_ROOT` to your dataset root. The whole process will occupy 100GB.
